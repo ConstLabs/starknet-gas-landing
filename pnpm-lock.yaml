@@ -11,6 +11,9 @@ importers:
       '@hookform/resolvers':
         specifier: ^3.4.2
         version: 3.4.2(react-hook-form@7.51.5(react@18.3.1))
+      '@openpanel/nextjs':
+        specifier: 0.0.10-beta
+        version: 0.0.10-beta(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-accordion':
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -339,6 +342,19 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@openpanel/nextjs@0.0.10-beta':
+    resolution: {integrity: sha512-sPR0ctTVnSfSXx2kaXBNyEfDRzwXc61L+pRR2HoQHWOJSYj69GwDjDUcIHM1FDPyMRrHYYDlihCPYVKUCB9LoA==}
+    peerDependencies:
+      next: ^12.0.0 || ^13.0.0 || ^14.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+
+  '@openpanel/sdk@0.0.9-beta':
+    resolution: {integrity: sha512-AjTpynr5wwN7qca7bQcHfV2Z9zZaCCK4mA+JIXO1LznoR6hLhnbkK91FbNN8jRFRD+2fPTcTAxG0YZlelAjdyw==}
+
+  '@openpanel/web@0.0.9-beta':
+    resolution: {integrity: sha512-u08sYhjnI3aJYIQiBkHYQGJns8FwcQXKx+bNg0kM8tel7y2tD82E5veFdtbp7DSMvBANgpw/efS6PhYfEOjWhg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -2623,6 +2639,19 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@openpanel/nextjs@0.0.10-beta(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@openpanel/web': 0.0.9-beta
+      next: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@openpanel/sdk@0.0.9-beta': {}
+
+  '@openpanel/web@0.0.9-beta':
+    dependencies:
+      '@openpanel/sdk': 0.0.9-beta
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
